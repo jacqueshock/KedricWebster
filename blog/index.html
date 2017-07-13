@@ -20,26 +20,39 @@ a:visited {
 
 img {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 65%;
 
   height: 200px;
   width: 200px;
 }
-
+#greeting {
+  border-bottom: 1px solid black;
+}
+#second {
+  border-left: 1px solid black;
+  padding-left: 4px;
+}
+#content {
+  padding-left: 10px;
+}
+.highlight {
+  color: darkblue;
+}
 
   </style>
   <title>KDub Blog</title>
 </head>
 <body>
 <img src="http://chattanooga.events/wp-content/uploads/sites/3/2017/05/12524158_1246659742030519_7942096439113626685_n-copy.jpg">
-  <h1>K Dub's Blog</h1>
-  <h2>A source for all things Git and GitHub related</h2>
-  <p>Hello and welcome to my Web Log.</p>
+<div id="greeting">  <h1>K Dub's Blog</h1></div>
+<div id="second"> <h2>A source for all things Git and GitHub related</h2></div>
+  <div id = "content"><p>Hello and welcome to my Web Log.</p>
   <p>Many people may not remember that the word <i>blog</i> is a shortened version of <i>Web Log</i></p>
   <p>This blog will be designed to record via the written word some of my learning in Git and GitHub</p>
-  <p>Remember, all fans of the Kansas City Royals should be treated to a free dinner at Back Inn Cafe ----></p>
-  <nav class="menu">
+  <p>Remember, all fans of the <span class="highlight">Kansas City Royals</span> should be treated to a free dinner at Back Inn Cafe ----></p>
+</div>
+
     <ul>
       <li><a href="https://kedrics-project.firebaseapp.com/">About</a></li>
       <br>
@@ -47,7 +60,7 @@ img {
       <br>
       <li> <a href="mailto:donotemailme@yahoo.com">Contact Me</a></li>
     </ul>
-  </nav>
+
 
 </body>
 </html>
