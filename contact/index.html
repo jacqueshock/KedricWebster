@@ -4,13 +4,13 @@
   <title>Contact Form</title>
 </head>
 <body>
-  <form action="form-responses/new" method="POST">
+  <form action="//formspree.io/donotemailme@mailinator.com method="POST">
 
-  <input type="text" name="firstname" value="First Name" size="100" autofocus>
+  <input type="text" name="firstname" placeholder="First Name" required size="100" autofocus>
   <br><br>
-  <input type="text" name="lastname" value="Last Name" size="100">
+  <input type="text" name="lastname" placeholder="Last Name" required size="100">
   <br><br>
-  <input type="email" name="userEmail" placeholder="your.email@example.com">
+  <input type="email" name="userEmail" required placeholder="your.email@example.com">
 <br><br>
   <label>What's this message about?
     <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
@@ -38,7 +38,7 @@
     <option value="other">Other</option>
   </select>
 
-  <textarea name="user_message" rows="8" cols="40"></textarea>
+  <textarea name="user_message" required="user_message" rows="8" cols="40"></textarea>
   <input type="submit">
 </form>
 </body>
