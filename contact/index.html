@@ -3,28 +3,50 @@
 <head>
   <title>Contact Form</title>
   <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+<style>
 
+body {
+  margin: 20px 0px 0px 20px;
+}
+input[type = "submit"] {
+    border-radius: 6px;
+    padding: 4px 5px 4px 5px;
+    font-family: arial;
+    font-size: 15px;
+  cursor: pointer;
+}
+
+input[type="text"]{
+  font-size: 13px;
+
+}
+
+textarea {
+  font-size: 14px;
+}
+
+</style>
 </head>
 <body>
   <form action="//formspree.io/donotemailme@mailinator.com method="POST">
 
-  <input type="text" name="firstname" placeholder="First Name" required size="100" autofocus>
+  <input type="text" name="firstname" placeholder="First Name" required size="80" autofocus>
   <br><br>
-  <input type="text" name="lastname" placeholder="Last Name" required size="100">
+  <input type="text" name="lastname" placeholder="Last Name" required size="80">
   <br><br>
   <input type="email" name="userEmail" required placeholder="your.email@example.com">
 <br><br>
   <label>What's this message about?
-    <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
-    <input type="radio" name="subject" value="personal" checked><span>Personal message</span>
-    <input type="radio" name="subject" value="other" checked><span>Don't know/something else</span>
+    <input type="radio" name="subject" value="professional" checked><span> I'd like to hire you!</span>
+    <input type="radio" name="subject" value="personal" checked><span> Personal message</span>
+    <input type="radio" name="subject" value="other" checked><span> Don't know/something else</span>
   </label>
-
+<br><br>
   <input type="checkbox" name="optin" value="trusting" checked>Subscribe me to your newsletter!
-  <input type="checkbox" name="optout" value="skeptical" disabled>Cheeky checkbox...
+  <input type="checkbox" name="optout" value="skeptical" disabled>Free pizza...
 <br><br>
   <label for="marketing">How did you hear about me?</label>
-  <br><br>
+
   <select name="marketing">
     <optgroup label="Online">
       <option value="social">Social Media (FB, Twitter, LinkedIn)</option>
@@ -39,8 +61,9 @@
     </optgroup>
     <option value="other">Other</option>
   </select>
-
+<br><br><br>
   <textarea name="user_message" required="user_message" rows="8" cols="40"></textarea>
+  <br><br>
   <input type="submit">
 </form>
 </body>
