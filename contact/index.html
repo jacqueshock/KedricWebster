@@ -7,6 +7,7 @@
 
 body {
   margin: 20px 0px 0px 20px;
+  background-color: rgb(240, 220, 180);
 }
 input[type = "submit"] {
     border-radius: 6px;
@@ -17,33 +18,43 @@ input[type = "submit"] {
 }
 
 input[type="text"]{
-  font-size: 13px;
+  width: 50%;
+   font-size: 15px;
+   margin: 7px 0px 0px 0px;
+   padding: 10px;
+}
 
+input[type="email"]{
+  font-size: 14px;
+margin: 10px 0px 0px 0px;
+padding: 7px;
 }
 
 textarea {
   font-size: 14px;
 }
 
+
 </style>
 </head>
 <body>
+  <h3>Contact Form</h3>
   <form action="//formspree.io/donotemailme@mailinator.com method="POST">
 
-  <input type="text" name="firstname" placeholder="First Name" required size="80" autofocus>
+  <input type="text" name="firstname" placeholder="First Name" autofocus>
   <br><br>
-  <input type="text" name="lastname" placeholder="Last Name" required size="80">
+  <input type="text" name="lastname" placeholder="Last Name">
   <br><br>
-  <input type="email" name="userEmail" required placeholder="your.email@example.com">
+  <input type="email" name="userEmail" required placeholder="your.email@example.com" required size="40">
 <br><br>
   <label>What's this message about?
     <input type="radio" name="subject" value="professional" checked><span> I'd like to hire you!</span>
-    <input type="radio" name="subject" value="personal" checked><span> Personal message</span>
-    <input type="radio" name="subject" value="other" checked><span> Don't know/something else</span>
+    <input type="radio" name="subject" value="personal"><span> Personal message</span>
+    <input type="radio" name="subject" value="other"><span> Don't know/something else</span>
   </label>
 <br><br>
-  <input type="checkbox" name="optin" value="trusting" checked>Subscribe me to your newsletter!
-  <input type="checkbox" name="optout" value="skeptical" disabled>Free pizza...
+  <input type="checkbox" name="optin" value="trusting"> Subscribe me to your newsletter!
+  <input type="checkbox" name="optout" value="skeptical" disabled> Free pizza...
 <br><br>
   <label for="marketing">How did you hear about me?</label>
 
