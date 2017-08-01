@@ -1,5 +1,18 @@
-var firstName = prompt("Hi there! What's your first name?") || "Visitor";
-var lastName = prompt("What's your last name?"); || "McDefaultson";
-var output = document.querySelector('#greeting');
+$("li").on("mouseover", function(event){
+  var target = event.target;
+  $(target).addClass("highlighted")
+})
+$("li").on("mouseleave", function(event){
+  var target = event.target;
+  $(target).removeClass("highlighted")
+})
 
-output.innerHTML = "<p>Thanks for visiting, " + firstName + " " + lastName + ".</p>";
+$("h2").on("mouseover",function(){
+  $("h2").addClass("glow")
+})
+$("h2").on("mouseleave", function(){
+    $("h2").removeClass("glow")
+})
+$("#img").on("click", function(){
+  $("#hidden-blurb").slideDown(); // only works if #hidden-blurb has display:none; in its CSS
+});

@@ -5,4 +5,4 @@ $("body").css({"background-color": "#EFFBF5", 'padding': '20px'});
 $(".holder1").css({'border': '1px solid red', 'margin':'0 60% 0 10%'});
 $(".holder2").css({'border': '1px solid blue', 'margin-right':'50%'});
 $("#secret").hide();
-$("#change-me").css("color", "green");
+$("#change-me").animate("font-size", "200%");
