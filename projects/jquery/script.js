@@ -6,3 +6,6 @@ $(".holder1").css({'border': '1px solid red', 'margin':'0 60% 0 10%'});
 $(".holder2").css({'border': '1px solid blue', 'margin-right':'50%'});
 $("#secret").hide();
 $("#change-me").animate("font-size", "200%");
+
+
+$("#img1").html("<img src='http://rubyriverminiaustralianshepherds.com/wp-content/uploads/aussie-puppy-for-sale-940x412.jpg'");
