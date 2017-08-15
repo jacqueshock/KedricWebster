@@ -1,4 +1,4 @@
-$("li").on("mouseover", function(event){
+/* $("li").on("mouseover", function(event){
   var target = event.target;
   $(target).addClass("highlighted")
 })
@@ -25,7 +25,7 @@ lastOne++
 }
 
 
-/*  Testing in the console
+ Testing in the console
 
 a = [99, 5, 82, 65, 39, 120, 431, 98, 17, 42]
 var max = function (a) {
