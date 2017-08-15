@@ -1,0 +1,53 @@
+body {
+  background-color: skyblue;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+h1, h2 {
+  color: darkred;
+  text-align: center;
+}
+a:link {
+    color: darkgreen;
+}
+a:visited {
+    color: red;
+}
+
+img {
+  position: absolute;
+  top: 35%;
+  left: 75%;
+
+  height: 175px;
+  width: 175px;
+}
+#greeting {
+  border-bottom: 1px solid black;
+}
+
+#content {
+  margin-right: 30%;
+}
+
+.highlight {
+  color: darkblue;
+}
+#nav {
+  position: fixed;
+  top: 1.75em;
+  left: 0;
+  height: 1.3em;
+  width: 10em;
+}
+#nav li {
+  display: inline;
+}
+
+#header {
+  margin-top: 1.3em;
+}

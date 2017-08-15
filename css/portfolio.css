@@ -13,25 +13,24 @@ p, ul {
   color: darkblue;
 }
 
-img{
+img {
   height: 200px;
   width: 200px;
   border-radius: 50%;
   padding: 2%;
-
 }
+
+iframe {
+  width: 400px;
+  height: 300px;
+  frameborder: 0;
+  border: 0;
+}
+
 #greeting {
   color: red;
 text-align: center;
 font-size: 25px;
-}
-
-.highlighted {
-  color: yellow;
-}
-
-.glow {
-  color: purple;
 }
 
 hidden-blurb {

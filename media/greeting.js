@@ -24,6 +24,9 @@ while(index<arr.length) {
 lastOne++
 }
 
+
+/*  Testing in the console
+
 a = [99, 5, 82, 65, 39, 120, 431, 98, 17, 42]
 var max = function (a) {
   max = 0;
@@ -33,6 +36,7 @@ if (a[i]>max)
 }
 return max;
 }
+
 
 a = [99, 7, 82, 65, 39, 120, 431, 98, 17, 42]
 var sum = function (a) {
