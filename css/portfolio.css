@@ -1,16 +1,21 @@
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
+
+
 body {
 background-color: lightblue;
+margin-left: 10%;
+margin-right: 20%;
 }
 
 h1, h2, h3 {
   color: blue;
 }
+
 p, ul {
   color: darkblue;
+}
+
+.heading {
+  text-align: center;
 }
 
 img {
@@ -27,12 +32,14 @@ iframe {
   border: 0;
 }
 
-#greeting {
-  color: red;
-text-align: center;
-font-size: 25px;
+.move {
+  position: absolute;
+  top: 20%;
+  left: 60%;
 }
 
-hidden-blurb {
-  display: none;
+@media (min-width: 320px) and (max-width: 960px) {
+    .container {
+      width: 100%;
+    }
 }
